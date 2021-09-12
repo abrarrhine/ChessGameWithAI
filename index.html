@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chess Game</title>
+    <link rel="stylesheet" href="lib/chessboardjs/css/chessboard-0.3.0.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<header>
+    <a href="#"><img width="400px"src="img/realchesslogo.png" alt="chess Logo"></a>
+</header>
+<body>
+    <button onClick="refreshButton()" class ="large-button" id="start-btn">New Game</button>
+<div id="board" class="board"></div>
+<div class="info">
+    Choose Difficulty Level: 
+    <select class="bigText" id="search-depth">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select> 
+
+    <br>
+    <span>Positions evaluated: <span id="position-count"></span></span>
+    <br>
+    <span>Time: <span id="time"></span></span>
+    <br>
+    <span>Positions/s: <span id="positions-per-s"></span> </span>
+    <br>
+    <br>
+    <p>See move history below:</p>
+    <div color="black" id="move-history" class="move-history">
+    </div> 
+    <br>
+    <p id="lives"></p>
+</div>
+<script src="lib/jquery/jquery-3.2.1.min.js"></script>
+<script src="lib/chessboardjs/js/chess.js"></script>
+<script src="lib/chessboardjs/js/chessboard-0.3.0.js"></script>
+<script src="script.js"></script>
+<script>
+
+</script>
+</body>
+<footer>
+    <p>Made by Abrar Islam, a Computer Science student at Virginia Tech</p>
+</footer>
+</html>

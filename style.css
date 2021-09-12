@@ -1,0 +1,56 @@
+.board {
+    width: 400px;
+    margin: auto
+}
+
+header{
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 4px solid white;
+}
+
+.large-button{
+    
+    font-size: 20pt;
+    background-color: #ec9a1e;
+    margin-top: 1%;
+    transition: transform 200ms ease-in-out;
+    display: inline-block;
+    position:absolute;
+    margin-left: 25%;
+}
+
+.large-button:hover{
+    transform: scale(1.1);
+}
+
+#lives{
+    font-size: 170%;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.bigText{
+    font-size: 110%;
+}
+
+body{
+    background-color:black; 
+    color:aqua;
+    font-size:130%;
+}
+footer{
+    background-color:white;
+    text-align: center;
+    color: black;
+}
+.info {
+    width: 400px;
+    margin: auto;
+}
+
+.move-history {
+    max-height: 100px;
+    overflow-y: scroll;
+}
